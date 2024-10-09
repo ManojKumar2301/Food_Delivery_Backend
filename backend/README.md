@@ -46,6 +46,10 @@ This backend system is designed for a food delivery platform. It supports user m
 ### Order Management
 
 -> **POST** `/api/orders` - Place a new order
+-> **GET** `/orders/{orderId}`: Get the details of an order, including its status and items.
+-> **PUT** `/orders/{orderId}/status`: Update the order status (requires proper authorization).
+-> **GET** `/orders`: List all orders for the logged in user.
+
+### Realtime Order Tracking
+
 -> **GET** `/api/orders/:orderId/track` - Track the order status in real-time
-
-
