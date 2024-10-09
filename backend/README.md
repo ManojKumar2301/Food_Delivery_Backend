@@ -33,23 +33,23 @@ This backend system is designed for a food delivery platform. It supports user m
 
 ### User Management
 
--> **POST** `/api/auth/register` - Register a new user
--> **POST** `/api/auth/login` - Authenticate a user
--> **GET** `/api/auth/profile` - Get user profile (requires authentication)
--> **PUT** `/api/auth/profile` - Update user profile (requires authentication)
+1. **POST** `/api/auth/register` - Register a new user
+2. **POST** `/api/auth/login` - Authenticate a user
+3. **GET** `/api/auth/profile` - Get user profile (requires authentication)
+4. **PUT** `/api/auth/profile` - Update user profile (requires authentication)
 
 ### Restaurant & Menu Management
 
--> **POST** `/api/restaurants` - Create a new restaurant
--> **POST** `/api/restaurants/:restaurantId/menu` - Add items to a restaurant’s menu
+1. **POST** `/api/restaurants` - Create a new restaurant
+2. **POST** `/api/restaurants/:restaurantId/menu` - Add items to a restaurant’s menu
 
 ### Order Management
 
--> **POST** `/api/orders` - Place a new order
--> **GET** `/orders/{orderId}`: Get the details of an order, including its status and items.
--> **PUT** `/orders/{orderId}/status`: Update the order status (requires proper authorization).
--> **GET** `/orders`: List all orders for the logged in user.
+1. **POST** `/api/orders` - Place a new order
+2. **GET** `/orders/{orderId}`: Get the details of an order, including its status and items.
+3. **PUT** `/orders/{orderId}/status`: Update the order status (requires proper authorization).
+4. **GET** `/orders`: List all orders for the logged in user.
 
 ### Realtime Order Tracking
 
--> **GET** `/api/orders/:orderId/track` - Track the order status in real-time
+1. **GET** `/api/orders/:orderId/track` - Track the order status in real-time
